@@ -1,0 +1,14 @@
+{
+// Configure your Run and Preview buttons here.
+
+// Run button configuration
+  "commands": {
+        "Run Current": "./run.sh {{filepath}}"
+  },
+
+// Preview button configuration
+  "preview": {
+        "Google": "http://google.com"
+  },
+  "debugger": [{"type":"JAVA","command":"-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5105","before":"./debug.sh {{filepath}}","uuid":"4f4774bf-a51f-b6f8-d405-63b315188cd0","name":"Debug Current"},{"type":"JAVA","command":"-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5105","before":"./debug.sh src/Driver.java","uuid":"504cb841-f920-fea5-2fd5-0336958cd7b5","name":"Debug Driver"}]
+}
